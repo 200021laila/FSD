@@ -18,7 +18,6 @@ class Student:
     return bool(email.endswith("@university.com") and ("@" in email) and ("." in email))
 
   def is_valid_password(self, password):
-
     return bool(re.match( r"^[A-Z].{4,}[0-9]{3}$", password))
     #return password.isupper() and len(password) >= 5 and all(char.isdigit() for char in password[-3:])
 
